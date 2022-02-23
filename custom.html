@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>custom property</title>
+    <style>
+        :root {
+            --side-width: 200px;
+            --font-color: green;
+            --bordercolor: 2px solid red;
+        }
+
+        h1,
+        h2 {
+            color: var(--font-color);
+            border: var(--bordercolor);
+        }
+
+        .nav,
+        .blogs {
+            float: left;
+            height: 500px;
+        }
+
+        footer {
+            clear: both;
+        }
+
+        .nav {
+            background-color: green;
+            width: var(--side-width);
+        }
+
+        .blogs {
+            background-color: red;
+            width: calc(100% - 3* var(--side-width));
+        }
+    </style>
+</head>
+
+<body>
+    <h1>This is my website</h1>
+    <h2>This is my website</h2>
+    <section>
+        <aside class="nav">
+            this is my nav
+        </aside>
+        <div class="blogs">
+            <h4>blog</h4>
+        </div>
+    </section>
+    <footer>This is my website</footer>
+</body>
+
+</html>

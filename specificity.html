@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specificity</title>
+    <style>
+        #blue {
+            color: blue;
+        }
+
+        .green {
+            color: green;
+        }
+
+        h1 {
+            color: red !important;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="green">This is my heading-1</h1>
+    <h1 id="blue" class="green" style="color: hotpink;">This is my heading-2</h1>
+    <h1>This is my heading-3</h1>
+    <h1>This is my heading-4</h1>
+    <p>This is my text description-1</p>
+    <p>This is my text description-2</p>
+    <p>This is my text description-3</p>
+    <p>This is my text description-4</p>
+    <p>This is my text description-5</p>
+</body>
+
+</html>
